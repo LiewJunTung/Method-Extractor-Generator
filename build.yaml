@@ -1,0 +1,7 @@
+builders:
+  native_plugin_generator:
+    import: "package:method_extractor_generator/builder.dart"
+    builder_factories: ["methodExtractorBuilder"]
+    build_extensions: {".dart": [".gen.json"]}
+    auto_apply: dependents
+    build_to: cache

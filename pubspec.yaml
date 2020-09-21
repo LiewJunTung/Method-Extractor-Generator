@@ -1,0 +1,18 @@
+name: method_extractor_generator
+description: Extract methods and convert them to json for further processing.
+version: 1.0.0
+
+
+environment:
+  sdk: ">=2.9.0 <3.0.0"
+
+dependencies:
+  analyzer: "0.39.14" # Pin the analyzer version to work around generatiuon failure
+  build: ^1.3.0
+  build_config: ^0.4.0
+  source_gen: ^0.9.0
+  method_extractor:
+    path: ../method_extractor/
+
+dev_dependencies:
+  test: ^1.6.0
