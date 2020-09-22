@@ -6,4 +6,4 @@ import 'src/generator.dart';
 Builder methodExtractorBuilder(BuilderOptions options) => LibraryBuilder(
     MethodExtractorGenerator(),
     formatOutput: (generated) => generated.replaceAll(RegExp(r'//.*|\s'), ''),
-    generatedExtension: '.gen.json');
+    generatedExtension: '.method.gen.json');

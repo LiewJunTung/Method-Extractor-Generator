@@ -25,11 +25,18 @@ class CheckNativeAnnotation extends SimpleElementVisitor {
   List<String> methodList = [];
 
   @override
-  void visitMethodElement(MethodElement element) {
-    var ignoreAnnotation = element.metadata
-        .any((element) => element.element.name == 'ignoreNativeAnnotation');
-    if (!ignoreAnnotation) {
+  void visitMethodElement(MethodElement element)  => _extractMethod(element);
+
+  @override
+  visitPropertyAccessorElement(PropertyAccessorElement element) => _extractMethod(element);
+
+  _extractMethod(Element element){
+    var extractedMethod = element.metadata
+        .any((element) => element.element.name == 'extractMethod');
+    print(element.name);
+    print(element.metadata);
+    if (extractedMethod) {
       methodList.add(element.name);
-    }
+    };
   }
 }
