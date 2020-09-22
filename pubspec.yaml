@@ -1,6 +1,6 @@
 name: method_extractor_generator
 description: Extract methods and convert them to json for further processing.
-version: 1.1.0
+version: 1.1.1
 repository: https://github.com/LiewJunTung/Method-Extractor-Generator
 
 environment:

@@ -33,8 +33,6 @@ class CheckNativeAnnotation extends SimpleElementVisitor {
   _extractMethod(Element element){
     var extractedMethod = element.metadata
         .any((element) => element.element.name == 'extractMethod');
-    print(element.name);
-    print(element.metadata);
     if (extractedMethod) {
       methodList.add(element.name);
     };
