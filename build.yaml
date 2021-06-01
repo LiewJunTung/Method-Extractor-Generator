@@ -1,6 +1,6 @@
 builders:
   method_extractor_generator:
-    import: "package:method_extractor_generator/builder.dart"
+    import: "package:method_extractor_generator/method_extractor_generator.dart"
     builder_factories: ["methodExtractorBuilder"]
     build_extensions: {".dart": [".method.gen.json"]}
     auto_apply: dependents

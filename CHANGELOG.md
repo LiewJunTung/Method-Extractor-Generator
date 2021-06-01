@@ -1,4 +1,6 @@
 ## CHANGELOG
+#### 2.0.0+3
+- Migrated to null-safety
 #### 1.2.0+1
 - Updated dependencies
 

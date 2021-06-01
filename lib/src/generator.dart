@@ -9,7 +9,7 @@ import 'package:source_gen/source_gen.dart';
 
 class MethodExtractorGenerator extends GeneratorForAnnotation<MethodExtractor> {
   @override
-  FutureOr<String> generateForAnnotatedElement(
+  FutureOr<String>? generateForAnnotatedElement(
       Element element, ConstantReader annotation, BuildStep buildStep) {
     if (element.metadata.isNotEmpty) {
       var visitor = CheckNativeAnnotation();
@@ -27,7 +27,7 @@ class CheckNativeAnnotation extends SimpleElementVisitor {
   @override
   void visitMethodElement(MethodElement element) {
     var extractedMethod = element.metadata
-        .any((element) => element.element.name == 'extractMethod');
+        .any((element) => element.element?.name == 'extractMethod');
     if (extractedMethod) {
       methodList.add(element.name);
     }
@@ -36,7 +36,7 @@ class CheckNativeAnnotation extends SimpleElementVisitor {
   @override
   void visitPropertyAccessorElement(PropertyAccessorElement element) {
     var extractedMethod = element.metadata
-        .any((element) => element.element.name == 'extractMethod');
+        .any((element) => element.element?.name == 'extractMethod');
     if (extractedMethod) {
       methodList.add(element.name);
     }
