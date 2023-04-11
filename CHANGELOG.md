@@ -1,4 +1,6 @@
 ## CHANGELOG
+#### 3.0.0
+- Update analyzer dependency
 #### 2.0.0+3
 - Migrated to null-safety
 #### 1.2.0+1

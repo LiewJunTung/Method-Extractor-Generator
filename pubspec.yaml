@@ -11,7 +11,7 @@ dependencies:
   build_config: ^1.0.0
   source_gen: ^1.2.1
   method_extractor: ^2.0.0+2
-  analyzer: 5.10.0
+  analyzer: ^5.10.0
 
 dev_dependencies:
   test: ^1.17.5
