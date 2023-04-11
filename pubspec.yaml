@@ -1,6 +1,6 @@
 name: method_extractor_generator
 description: Extract methods and convert them to json for further processing.
-version: 2.0.0+3
+version: 3.0.0
 repository: https://github.com/LiewJunTung/Method-Extractor-Generator
 
 environment:
@@ -11,7 +11,7 @@ dependencies:
   build_config: ^1.0.0
   source_gen: ^1.2.1
   method_extractor: ^2.0.0+2
-  analyzer: ^3.4.1
+  analyzer: 5.10.0
 
 dev_dependencies:
   test: ^1.17.5
