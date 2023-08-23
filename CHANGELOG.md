@@ -1,4 +1,6 @@
 ## CHANGELOG
+#### 3.1.0
+- Bump flutter version
 #### 3.0.0
 - Update analyzer dependency
 #### 2.0.0+3
